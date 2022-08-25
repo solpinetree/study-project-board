@@ -34,7 +34,6 @@
                 />
                 <attr sel="li[1]/a"
                       th:href="*{id} + 1 > ${totalCount} ? '#' : |/articles/*{id + 1}|"
-                      th:text="*{id} + 1"
                       th:class="'page-link' + (*{id} + 1 > ${totalCount} ? ' disabled' : '')"
                 />
             </attr>
