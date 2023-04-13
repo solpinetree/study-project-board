@@ -64,3 +64,8 @@ spring:
   jpa.hibernate.ddl-auto: create
   sql.init.mode: always # test data 넣어줌 (data.sql)
 
+---
+
+spring:
+  config.activate.on-profile: test
+  datasource.url: jdbc:h2:mem:testdb
